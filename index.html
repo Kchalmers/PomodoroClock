@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Clock</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <header>Pomodoro Clock</header>
+        <div class="body">
+            <div class="initTime">
+                <input title="min" type="text" class="mins" value="25"> Min
+                <input title="sec" type="text" class="secs" value="00"> Sec
+            </div>
+            <div class="clock">
+                <div id="minutes"></div> : <div id="seconds"></div>
+            </div>
+            <div class="buttons">
+                <button class="start btn btn-success">Start</button>
+                <button class="stop btn btn-danger">Stop</button>
+                <button class="reset btn btn-warning">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
