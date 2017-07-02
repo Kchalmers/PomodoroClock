@@ -35,6 +35,9 @@ function Clock() {
         if(self.minutesDom[0].innerHTML === self.mins.val()) {
             this.reset(parseInt(this.mins.val()), parseInt(this.secs.val()), true);
         }
+        else {
+            this.reset(minutes, seconds, true);
+        }
     };
     this.stop = function(){
         this.reset(minutes, seconds, false);
