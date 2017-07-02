@@ -19,6 +19,8 @@ function Clock() {
         $('.stop').click(function(){
             self.stop.apply(self);
         });
+        self.minutesDom.append(self.mins.val());
+        self.secondsDom.append(self.secs.val());
     };
 
     this.interval = setInterval(function(){
@@ -30,11 +32,8 @@ function Clock() {
         started = status;
     };
     this.start = function() {
-        if(!self.minutesDom[0].innerHTML && !self.secondsDom[0].innerHTML) {
+        if(self.minutesDom[0].innerHTML === self.mins.val()) {
             this.reset(parseInt(this.mins.val()), parseInt(this.secs.val()), true);
-        }
-        else {
-            this.reset(minutes, seconds, true);
         }
     };
     this.stop = function(){

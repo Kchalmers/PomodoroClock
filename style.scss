@@ -1,0 +1,32 @@
+@import "variables";
+
+header {
+  font-size: $header-size;
+  margin: $standard-margin;
+}
+.body {
+  margin: $standard-margin;
+  display: $standard-display;
+}
+.clock {
+  background-color: $inner-color;
+  font-family: $timer-font;
+  font-size: $timer-fontSize;
+  border: $clock-border;
+  margin: $standard-margin;
+  div {
+    display: $standard-display;
+  }
+}
+.container {
+  background-color: $clock-background;
+  box-shadow: $container-shadow;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.initTime {
+  display: $input-display;
+  font-size: $timer-fontSize;
+}
